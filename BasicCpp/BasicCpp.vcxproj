@@ -24,6 +24,7 @@
     <ProjectGuid>{fdb76031-a901-463f-a4dc-1adeb76e18be}</ProjectGuid>
     <RootNamespace>BasicCpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BasicCppPart1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -147,7 +148,7 @@
     <ClCompile Include="z4.cpp" />
     <ClCompile Include="z3.cpp" />
     <ClCompile Include="z1.cpp" />
-    <ClCompile Include="x2.cpp" />
+    <ClCompile Include="z2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

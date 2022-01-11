@@ -21,7 +21,7 @@
     <ClCompile Include="z1.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="x2.cpp">
+    <ClCompile Include="z2.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="z4.cpp">

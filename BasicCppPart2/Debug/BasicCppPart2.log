@@ -1,0 +1,5 @@
+﻿  z10.cpp
+  z12.cpp
+I:\github\cpp-examples\BasicCppPart2\z12.cpp(20,40): warning C4018: >=: несоответствие типов со знаком и без знака
+  Создание кода...
+  BasicCppPart2.vcxproj -> I:\github\cpp-examples\BasicCpp\Debug\BasicCppPart2.exe

@@ -5,3 +5,28 @@
 На вход программе даны пять вещественных чисел: N, A, B, X, Y (A < B)
 - где N - исходная стоимость товара. Выведите стоимость покупки товара с учётом скидки.
 */
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int z5() {
+    double N, A, B, X, Y;
+    cin >> N >> A >> B >> X >> Y;
+    if (A >= B) {
+        cout << "Цена A должна быть меньше B";
+    }
+    else {
+        if (N > B) {
+            cout << N - N * Y / 100;
+        }
+        else if (N > A) {
+            cout << N - N * X / 100;
+        }
+        else {
+            cout << N;
+        }
+    }
+    return 0;
+}
