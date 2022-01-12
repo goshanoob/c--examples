@@ -10,6 +10,8 @@ A, B и C  уравнения Ax² + Bx + C = 0. Выведите все его 
 using namespace std;
 
 int z3() {
+    cout << "Задача 3. Введите коэф-ы КВУР a, b, c:" << endl;
+
     int a, b, c;
     cin >> a >> b >> c;
     double D = b * b - 4 * a * c;

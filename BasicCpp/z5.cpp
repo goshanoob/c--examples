@@ -6,12 +6,12 @@
 - где N - исходная стоимость товара. Выведите стоимость покупки товара с учётом скидки.
 */
 
-
 #include <iostream>
-#include <vector>
 using namespace std;
 
-int z5() {
+void z5() {
+    cout << "Задача 5" << endl;
+
     double N, A, B, X, Y;
     cin >> N >> A >> B >> X >> Y;
     if (A >= B) {
@@ -28,5 +28,4 @@ int z5() {
             cout << N;
         }
     }
-    return 0;
 }

@@ -8,13 +8,14 @@
 #include <vector>
 using namespace std;
 
-int z4() {
+void z4() {
+    cout << "Задача 4. Введите два числа, чтобы найти остаток от деления:" << endl;
+
     int A, B;
     cin >> A >> B;
     if (B == 0) {
         cout << "Impossible";
-        return 0;
+        return;
     }
     cout << A / B;
-    return 0;
 }

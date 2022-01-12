@@ -1,13 +1,12 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (BasicCpp.vcxproj).  Это может привести к ошибкам очистки и перестроения.
-  z9.cpp
-  z8.cpp
-  z7.cpp
-I:\github\cpp-examples\BasicCpp\z7.cpp(21,20): warning C4018: <: несоответствие типов со знаком и без знака
-  z6.cpp
-  z5.cpp
-  z4.cpp
-  z3.cpp
   z1.cpp
-  z2.cpp
-  Создание кода...
-  BasicCpp.vcxproj -> I:\github\cpp-examples\BasicCpp\Debug\BasicCppPart1.exe
+z1.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl z2(void)" (?z2@@YAHXZ) в функции _main.
+    Указание на символы, которые определены и могут подойти:
+      "void __cdecl z2(void)" (?z2@@YAXXZ)
+z1.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl z4(void)" (?z4@@YAHXZ) в функции _main.
+    Указание на символы, которые определены и могут подойти:
+      "void __cdecl z4(void)" (?z4@@YAXXZ)
+z1.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl z5(void)" (?z5@@YAHXZ) в функции _main.
+    Указание на символы, которые определены и могут подойти:
+      "void __cdecl z5(void)" (?z5@@YAXXZ)
+I:\github\cpp-examples\BasicCpp\Debug\BasicCppPart1.exe : fatal error LNK1120: неразрешенных внешних элементов: 3

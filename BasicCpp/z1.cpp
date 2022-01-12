@@ -6,12 +6,12 @@
 #include <iostream>
 using namespace std;
 
-int z1() {
+void z1() {
+	cout << "Задача 1. Введите два числа, чтобы сложить их:" << endl;
+
     int x1, x2;
     cin >> x1 >> x2;
-    cout << x1 + x2;
-
-    return 0;
+	cout << x1 + x2 << endl;
 }
 
 int z2();
@@ -25,6 +25,7 @@ int z9();
 
 int main()
 {
+	setlocale(LC_ALL, "");
 	z1();
 	z2();
 	z3();

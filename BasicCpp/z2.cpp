@@ -8,7 +8,9 @@
 #include <vector>
 using namespace std;
 
-int z2() {
+void z2() {
+    cout << "Задача 2. Введите три строки, чтобы найти минимальную среди них:" << endl;
+
     // Входные строки для сравнения.
     string string1, string2, string3;
     cin >> string1 >> string2 >> string3;
@@ -21,7 +23,4 @@ int z2() {
     else {
         cout << string3;
     }
-
-    return 0;
 }
-

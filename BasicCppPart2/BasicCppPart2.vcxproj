@@ -142,6 +142,8 @@
     <ClCompile Include="..\BasicCpp\z10.cpp" />
     <ClCompile Include="..\BasicCpp\z11.cpp" />
     <ClCompile Include="z12.cpp" />
+    <ClCompile Include="z13.cpp" />
+    <ClCompile Include="z14.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
