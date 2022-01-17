@@ -140,8 +140,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Source1.cpp" />
     <ClCompile Include="z9.cpp" />
     <ClCompile Include="z8.cpp" />
     <ClCompile Include="z7.cpp" />

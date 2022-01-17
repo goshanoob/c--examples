@@ -144,6 +144,8 @@
     <ClCompile Include="z12.cpp" />
     <ClCompile Include="z13.cpp" />
     <ClCompile Include="z14.cpp" />
+    <ClCompile Include="z15.cpp" />
+    <ClCompile Include="z16.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
