@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+﻿  z1.cpp
+  BasicCpp.vcxproj -> C:\Users\User\Documents\timofeevdn\cpp-examples\BasicCpp\Debug\BasicCpp.exe
+=======
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (BasicCpp.vcxproj).  Это может привести к ошибкам очистки и перестроения.
   z1.cpp
 z1.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl z2(void)" (?z2@@YAHXZ) в функции _main.
@@ -10,3 +14,4 @@ z1.obj : error LNK2019: ссылка на неразрешенный внешн�
     Указание на символы, которые определены и могут подойти:
       "void __cdecl z5(void)" (?z5@@YAXXZ)
 I:\github\cpp-examples\BasicCpp\Debug\BasicCppPart1.exe : fatal error LNK1120: неразрешенных внешних элементов: 3
+>>>>>>> 531c2d5d15d6e770230ed6569f3915d7514dfd3a

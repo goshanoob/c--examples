@@ -1,2 +1,6 @@
 C:\Users\user208\Documents\cpp\cpp-examples\BasicCpp\Debug\BasicCpp.exe
+<<<<<<< HEAD
+C:\Users\User\Documents\timofeevdn\cpp-examples\BasicCpp\Debug\BasicCpp.exe
+=======
 I:\github\cpp-examples\BasicCpp\Debug\BasicCppPart1.exe
+>>>>>>> 531c2d5d15d6e770230ed6569f3915d7514dfd3a
