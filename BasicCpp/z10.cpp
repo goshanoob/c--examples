@@ -19,6 +19,8 @@ bool IsPalindrom(string);
 vector<string> PalindromFilter(vector<string>, int);
 void UpdateIfGreater(int, int&);
 void MoveStrings(vector<string>&, vector<string>&);
+void Reverse(vector<int>& v);
+vector<int> Reversed(const vector<int>& v);
 
 int main() {
 	setlocale(LC_ALL, "");
@@ -32,6 +34,7 @@ int main() {
 	cout << Factorial(n) << endl; 
 
 	// Тестирование задачи 11.
+
 	string testString = "metotem";
 
 	cout << "Задача 11. Результат тестирования на полиндром строки '" << testString << "'" << endl;
@@ -72,5 +75,30 @@ int main() {
 	}
 	cout << endl;
 
+	// Тестирование задачи 15.
+
+	cout << "Задача 15. Изменить порядок элементов вектора { 1, 5, 3, 4, 2 } на обратный: " << endl;
+
+	vector<int> numbers = { 1, 5, 3, 4, 2 };
+	Reverse(numbers);
+	for (auto element : numbers) {
+		cout << element << " " << endl;
+	}
+
+	// Тестирование задачи 16.
+
+	numbers = { 1, 2, 3, 4, 5 };
+	vector<int> reversedNumbers = Reversed(numbers);
+
+	cout << "Задача 16. Создать копию вектора с обратным порядком элементов: " << endl;
+	for (auto element : reversedNumbers) {
+		cout << element << " " << endl;
+	}
+
+	cout << "Исходный вектор { 1, 2, 3, 4, 5 р }: " << endl;
+
+	for (auto element : numbers) {
+		cout << element << " " << endl;
+	}
 	return 0;
 }

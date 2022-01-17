@@ -4,10 +4,7 @@
 */
 
 #include <iostream>
-<<<<<<< HEAD
 #include <vector>
-=======
->>>>>>> 531c2d5d15d6e770230ed6569f3915d7514dfd3a
 using namespace std;
 
 void z1() {
@@ -27,35 +24,9 @@ int z7();
 int z8();
 int z9();
 
-void Reverse(vector<int>& v);
-vector<int> Reversed(const vector<int>& v);
-
 int main()
 {
-<<<<<<< HEAD
-    cout << "Задача N1. Изменить порядок элементов вектора { 1, 5, 3, 4, 2 }: " << endl;
-    vector<int> numbers = { 1, 5, 3, 4, 2 };
-    Reverse(numbers);
-    // numbers должен оказаться равен {2, 4, 3, 5, 1}
-    for (auto element : numbers) {
-        
-        cout << element << " " << endl;
-    }
-
-    numbers = { 1, 2, 3, 4, 5 };
-    vector<int> reversedNumbers = Reversed(numbers);
-
-    cout << "Задача N2. Создать копию вектора с обратным порядком элементов: " << endl;
-    for (auto element : reversedNumbers) {
-        cout << element << " " << endl;
-    }
-    cout << "Исходный вектор { 1, 2, 3, 4, 5 р }: " << endl;
-    for (auto element : numbers) {
-        cout << element << " " << endl;
-    }
-
-=======
-	setlocale(LC_ALL, "");
+   	setlocale(LC_ALL, "");
 	z1();
 	z2();
 	z3();
@@ -67,5 +38,4 @@ int main()
 	z9();
 
 	return 0;
->>>>>>> 531c2d5d15d6e770230ed6569f3915d7514dfd3a
 }
