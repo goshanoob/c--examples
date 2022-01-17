@@ -4,9 +4,19 @@
 */
 
 #include <iostream>
+<<<<<<< HEAD
 #include <vector>
+=======
+>>>>>>> 531c2d5d15d6e770230ed6569f3915d7514dfd3a
 using namespace std;
 
+void z1() {
+	cout << "Задача 1. Введите два числа, чтобы сложить их:" << endl;
+
+    int x1, x2;
+    cin >> x1 >> x2;
+	cout << x1 + x2 << endl;
+}
 
 int z2();
 int z3();
@@ -22,6 +32,7 @@ vector<int> Reversed(const vector<int>& v);
 
 int main()
 {
+<<<<<<< HEAD
     cout << "Задача N1. Изменить порядок элементов вектора { 1, 5, 3, 4, 2 }: " << endl;
     vector<int> numbers = { 1, 5, 3, 4, 2 };
     Reverse(numbers);
@@ -43,4 +54,18 @@ int main()
         cout << element << " " << endl;
     }
 
+=======
+	setlocale(LC_ALL, "");
+	z1();
+	z2();
+	z3();
+	z4();
+	z5();
+	z6();
+	z7();
+	z8();
+	z9();
+
+	return 0;
+>>>>>>> 531c2d5d15d6e770230ed6569f3915d7514dfd3a
 }

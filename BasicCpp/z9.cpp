@@ -8,8 +8,12 @@
 using namespace std;
 
 int z9() {
-	// Десятичное число, основание системы счисления, остаток от деления.
-	int number, radix = 2, remainder = 1;
+	// Десятичное число на входе.
+	int number;
+	// Основание системы счисления, 
+	int	radix = 2;
+	// Остаток от деления.
+	int remainder = 1;
 	// Число в двоичной системе счисления.
 	vector<int> binNumber;
 	cin >> number;
@@ -17,12 +21,13 @@ int z9() {
 		remainder = number % radix;
 		number /= radix;
 		binNumber.push_back(remainder);
-	} while (remainder >= radix);
+	} while (number >= radix);
 
-	for (auto number : binNumber) {
-		cout << number;
+	binNumber.push_back(number);
+
+	for (int i = binNumber.size() - 1; i >= 0; i--) {
+		cout << binNumber[i];
 	}
 	
-
 	return 0;
 }
