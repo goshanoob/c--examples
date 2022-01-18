@@ -16,7 +16,7 @@ int z3() {
     cin >> a >> b >> c;
     double D = b * b - 4 * a * c;
      if (D < 0) {
-         cout << "КОрней нет";
+         cout << "Корней нет";
      } else if (D == 0) {
          cout << -b / 2 / a;
      } else {

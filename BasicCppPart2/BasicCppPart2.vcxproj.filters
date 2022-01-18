@@ -18,12 +18,6 @@
     <ClCompile Include="z12.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="..\BasicCpp\z11.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="..\BasicCpp\z10.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="z13.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -34,6 +28,15 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="z16.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="z10.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="z11.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="z17.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
