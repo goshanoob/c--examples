@@ -26,12 +26,12 @@ int z9();
 
 int main()
 {
-   	setlocale(LC_ALL, "");
+   	setlocale(LC_ALL, "Russian");
 	z1();
-	z2();
+	//z2();
 	z3();
-	z4();
-	z5();
+	//z4();
+	//z5();
 	z6();
 	z7();
 	z8();
