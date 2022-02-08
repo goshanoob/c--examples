@@ -12,12 +12,13 @@
 using namespace std;
 
 void z2();
+void test();
 
 int main() 
 {
-	z2();
-
 	setlocale(LC_ALL, "Russian");
+	z2();
+	
 	// Вариант 1.
 	double z1, z2, alpha, betta;
 	double x, y, m, n;
