@@ -9,11 +9,14 @@
 #define _USE_MATH_DEFINES
 #include <iostream>
 #include <cmath>
-
 using namespace std;
+
+void z2();
 
 int main() 
 {
+	z2();
+
 	setlocale(LC_ALL, "Russian");
 	// Вариант 1.
 	double z1, z2, alpha, betta;
