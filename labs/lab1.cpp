@@ -11,13 +11,23 @@
 #include <cmath>
 using namespace std;
 
-void z2();
-void test();
+void z2_0();
+void z2_2();
+void z2_4();
+void z2_5();
+void z2_6();
+void z2_7();
+void z2_8();
+void z2_11();
+void z2_12();
+void z2_13();
+void z2_16();
+void z2_2_0();
 
 int main() 
 {
 	setlocale(LC_ALL, "Russian");
-	z2();
+	z2_2_0();
 	
 	// Вариант 1.
 	double z1, z2, alpha, betta;
@@ -96,7 +106,7 @@ int main()
 	cout << "В6. Введите значение alpha: " << endl;
 	cin >> alpha;
 	z1 = cos(alpha) + cos(2 * alpha) + cos(6 * alpha) + cos(7 * alpha);
-	z2 = 4 * cos(alpha / 2) * cos(5 / 2 * alpha) * cos(4 * alpha);
+	z2 = 4 * cos(alpha / 2) * cos(5.0 / 2 * alpha) * cos(4 * alpha);
 	cout << "z1 = " << z1 << " z2 = " << z2 << endl;
 
 	// Тестовые значения:
@@ -152,7 +162,7 @@ int main()
 	cout << "В10. Введите значение alpha: " << endl;
 	cin >> alpha;
 	z1 = sin(M_PI / 2 + 3 * alpha) / (1 - sin(3 * alpha - M_PI));
-	z2 = 1 / tan(5 / 4 * M_PI + 3 / 2 * alpha);
+	z2 = 1 / tan(5.0 / 4 * M_PI + 3.0 / 2 * alpha);
 	cout << "z1 = " << z1 << " z2 = " << z2 << endl;
 
 	// Тестовые значения:
