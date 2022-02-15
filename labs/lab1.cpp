@@ -27,7 +27,7 @@ void z2_2_0();
 int main() 
 {
 	setlocale(LC_ALL, "Russian");
-	z2_2_0();
+	z2_7();
 	
 	// Вариант 1.
 	double z1, z2, alpha, betta;

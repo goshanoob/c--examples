@@ -77,32 +77,40 @@ void z2_0() {
 }
 
 void z2_2() {
-	double xn = 0.1;
-	double xk = 10;
+	// Вариант 2. Сошлось.
+	double xn = -1;
+	double xk = 1;
 	double dx = 0.1;
 	double precision = 1e-6;
 	const int maxTerms = 500;
-	string xs = "", ys = ""; 
+	printf("    x |    y   | n |  test\n");
 	for (double x = xn; x <= xk; x += dx) {
-		double term = x, y = 0; 
-		int n = 2;
+		double term = x, y = x; 
+		int n = 1;
+		bool isDiverged = true;
+		double test = 0;
 		do {
-			y += term;
+			test += pow(-1, n + 1) * pow(x, n) / sqrt(n);
 			term *= -x * sqrt(n) / sqrt(n + 1);
+			y += term;
 			n++;
 			if (n >= maxTerms) {
+				isDiverged = false;
 				break;
 			}
 		} while (precision < abs(term));
-		printf("%8.2lf|%8.4lf|%4d\n", x, y, n);
-		xs += to_string(x) + " ";
-		ys += to_string(y) + " ";
+		if (!isDiverged) {
+			printf("%6.2lf|    -   |%3d\n", x, n);
+		}
+		else
+		{
+			printf("%6.2lf|%8.4lf|%3d|%8.4lf\n", x, y, n, test);
+		}
 	}
-	printf("%s\n", xs.c_str());
-	printf("%s\n", ys.c_str());
 }
 
 void z2_4() {
+	// Вариант 4. Почти сошлось.
 	double xn = -10, xk = 10, dx = 1;
 	double precision = 1e-6;
 	const int maxTerms = 500;
@@ -110,7 +118,7 @@ void z2_4() {
 	for (double x = xn; x <= xk; x += dx) {
 		double test = 0;
 		double term = 1, y = 1;
-		int n = 0;
+		double n = 0;
 		bool isDiverged = true;
 		do {
 			test += pow(-1, n + 1) * pow(x, 2 * n) / fact(2 * n);
@@ -123,24 +131,24 @@ void z2_4() {
 			}
 		} while (precision < abs(term));
 		if (!isDiverged) {
-			printf("%6.2lf|    -   |%3d\n", x, n);
+			printf("%6.2lf|    -   |%4.0f|%8.4lf\n", x, n, test);
 		}
 		else 
 		{
-			printf("%6.2lf|%8.4lf|%3d|%8.4lf|%8.4lf\n", x, y, n, cos(x), test);
+			printf("%6.2lf|%8.4lf|%4.0f|%8.4lf|%8.4lf\n", x, y, n, cos(x), test);
 		}
 	}
 }
 
 void z2_5() {
+	// Вариант 5. Сошлось.
 	double xn = -10, xk = 10, dx = 1;
 	double precision = 1e-6;
 	const int maxTerms = 500;
-	
 	printf("    x |    y   | n | sin(x)|  test\n");
 	for (double x = xn; x <= xk; x += dx) {
 		double test = 0;
-		double term = -x*x/6, y = 1;
+		double term = x, y = x;
 		int n = 1;
 		bool isDiverged = true;
 		do {
@@ -162,13 +170,14 @@ void z2_5() {
 		}
 	}
 }
-
+/*
 void z2_6() {
+	// Вариант 6.
 	double xn = -10, xk = 10, dx = 1;
 	double precision = 1e-6;
 	const int maxTerms = 500;
 
-	printf("    x |    y   | n | asin(x)\n");
+	printf("    x |    y   | n |sinh-1(x)\n");
 	for (double x = xn; x <= xk; x += dx) {
 		double term = x , y = 1;
 		int n = 1;
@@ -191,18 +200,18 @@ void z2_6() {
 		}
 	}
 }
-/*
+*/
+
 void z2_6() {
-	// Вариант 6.
+	// Вариант 6. Не сошлось.
 	double xn = -2, xk = 2, dx = 0.1;
-	double precision = 1e-20;
+	double precision = 1e-6;
 	const int maxTerms = 500;
-	printf("   x  |    y   |  n |  test  \n");
+	printf("   x  |    y   |  n | sinh(x)\n");
 	for (double x = xn; x <= xk; x += dx) {
 		double term = x;
 		double y = x;
 		double n = 2;
-		double test = 0;
 		bool isNotDevorsed = false;
 		do {
 			term *= pow(2 * n - 3, 2) * x * x / (2 * n - 2) / (2 * n - 1);
@@ -215,27 +224,27 @@ void z2_6() {
 		} while (precision < abs(term));
 		if (isNotDevorsed)
 		{
-			printf("%6.2lf|    -   |%4.0f|%8.4lf\n", x, n, test);
+			printf("%6.2lf|    -   |%4.0f|%8.4lf\n", x, n, asinh(x));
 		}
 		else
 		{
-			printf("%6.2lf|%8.4lf|%4.0f|%8.4lf\n", x, y, n, test);
+			printf("%6.2lf|%8.4lf|%4.0f|%8.4lf\n", x, y, n, asinh(x));
 		}
 	}
 }
-*/
+
 
 void z2_7() {
+	// Вариант 7. Не сошлось.
 	double xn = -1, xk = 1, dx = 0.1;
 	double precision = 1e-6;
 	const int maxTerms = 500;
-
 	printf("    x |    y   | n | test \n");
 	for (double x = xn; x <= xk; x += dx) {
-		double term = -2*x*x, y = 1 + term;
+		double term = 1 + 2 * x * x, y = term;
 		double n = 3;
 		bool isDiverged = true;
-		double test = 1 - 2*x*x;
+		double test = term;
 		do {
 			test += pow(-1, n - 1) * n * pow(x, n);
 			term *= -(n + 1) / n * x;
